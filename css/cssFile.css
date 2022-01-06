@@ -1,0 +1,122 @@
+@font-face {
+    font-family: "Inconsolata";
+    src: url("../fonts/Inconsolata.ttf");
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'JetBrains Mono';
+    src: url("../fonts/JetBrainsMono-Bold.ttf");
+    font-display: swap;
+}
+
+body{
+    background-color: rgb(24, 24, 24);
+}
+
+.ruotatesta{
+    margin:0px auto;
+    width:50px;
+    height:50px;  
+    margin-top:50px;
+    overflow: hidden;
+    transition-duration: 0.8s;
+    transition-property: transform;
+}
+
+.ruotatesta:hover {
+    transform: rotate(360deg);
+}
+    
+@keyframes ruota {
+    from {top: 0px;}
+    to {top: 1200px;}
+}
+
+.contenuto{
+    text-align: center;
+    font-family: "JetBrains Mono", monospace;
+    font-size: 14px;
+    color: whitesmoke;
+    max-width: 100%;
+}
+
+.tag{
+    font-family: 'Inconsolata', serif;
+    text-align: center;
+    font-size: 30px;
+    max-width: 100%;
+}
+
+.emoji{
+    width: 200px;
+    height: 200px;
+    margin: 0 auto;
+    align-items: center;
+    width: fit-content;
+}
+
+.h3::before{
+    margin-right: 0.5em;
+}
+
+.meme{
+    text-align: center;
+    font-family: "JetBrains Mono", monospace;
+    font-size: 14px;
+    color: whitesmoke;
+}
+
+.title{
+    font-family: 'Inconsolata', serif;
+    text-align: center;
+}
+
+#erba{
+        bottom: auto;
+        left: -1px;
+        width:100%;
+}
+
+.contenuto a:hover{border-bottom: solid;}
+.tag a:hover{border-bottom: solid;}
+.meme a:hover{border-bottom: solid;}
+
+a:link {
+    border-bottom: dotted 1px;
+    text-decoration: none;
+    color: inherit;
+}
+
+#prog{
+    color: #8cc665; 
+    font-family: "Inconsolata", serif;
+    text-align: center;
+}
+
+/*Colori*/
+#sanVitaliano {color: orangered;}
+#copyright {color: rgb(96, 96, 96);}
+#github {color: #8cc665;}
+#touch{color: whitesmoke;}
+#linietta1{width: 600px;}
+#twitter{color: #6CB5E8;}
+#eth{color: goldenrod;}
+#links{color: mediumturquoise;}
+#colorTitle{color: whitesmoke;}
+
+/*change font size on differnet device
+@media screen and (min-width: 768px) {
+    body{
+        font-family: 'Lato', sans-serif;
+        font-size: 20px;
+    }
+    
+}
+
+@media screen and (max-width: 768px) {
+        body{
+            font-family: 'Lato', sans-serif;
+            font-size: 18px;
+        }
+}*/
